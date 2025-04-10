@@ -1,7 +1,8 @@
 This is a [Next.js](https://nextjs.org) project meant to serve as my personal absolute barebones starter kit.
 
 ## Included in Starter
-- **Next.js 15 with React 19**
+- **React 19 and Next.js 15 w/ App Router**, including:
+  - root `page.tsx` redirects to `dashboard/page.tsx`, b/c it will generally be the root auth check for the app
 - **shadcn/ui with Tailwind v4**, including:
   - `components.json` points to `@/app/_components` for all components
   - `globals.css` forcefully removes all radii and box shadows
@@ -28,10 +29,12 @@ This is a [Next.js](https://nextjs.org) project meant to serve as my personal ab
 │   │   ├── ui/                # UI components from shadcn/ui
 │   │   └── utils.ts           # Component utility functions
 │   ├── (routes)/              # Route group for all app routes
+│   │   ├── dashboard/         # Dashboard page directory
+│   │   │   └── page.tsx       # Actual root page of the app
 │   ├── providers/             # React context providers
 │   ├── globals.css            # Global CSS styles
 │   ├── layout.tsx             # Root layout component
-│   └── page.tsx               # Home page component
+│   └── page.tsx               # Home page component (redirects to /dashboard)
 ├── public/                    # Static assets (images, fonts, etc.)
 ├── src/                       # Business logic and backend configuration
 ├── .env.example               # Reference file for environment variables
