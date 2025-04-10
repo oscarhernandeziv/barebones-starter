@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project meant to serve as my personal absolute barebones starter kit.
 
-# All it includes is:
+## Included in Starter
 - **Next.js 15 with React 19**
 - **shadcn/ui with Tailwind v4**, including:
   - `components.json` points to `@/app/_components` for all components
@@ -15,7 +15,7 @@ This is a [Next.js](https://nextjs.org) project meant to serve as my personal ab
   - `env.ts` is ignored in `biome.json` to allow for `process.env` in that file ONLY
 - **Cursor rules** including my preferences for all languages/frameworks/packages in `.cursor/rules`
 
-# Starter directory structure:
+## Starter directory structure:
 
 ```
 .
